@@ -61,3 +61,6 @@ RUN \
     && go2rtc --version
 
 WORKDIR /config
+
+ENV SHELL /bin/bash
+ENV TZ="America/Los_Angeles"

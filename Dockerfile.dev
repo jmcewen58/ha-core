@@ -62,7 +62,8 @@ RUN uv pip install -r requirements.txt
 COPY requirements_test.txt requirements_test_pre_commit.txt ./
 RUN uv pip install -r requirements_test.txt
 
-WORKDIR /workspaces
+WORKDIR /workspaces/ha-core
 
 # Set the default shell to bash instead of sh
 ENV SHELL /bin/bash
+ENV TZ="America/Los_Angeles"
